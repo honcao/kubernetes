@@ -92,8 +92,7 @@ func (client VirtualNetworkPeeringsClient) CreateOrUpdatePreparer(resourceGroupN
 		"virtualNetworkPeeringName": autorest.Encode("path", virtualNetworkPeeringName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
@@ -178,8 +177,7 @@ func (client VirtualNetworkPeeringsClient) DeletePreparer(resourceGroupName stri
 		"virtualNetworkPeeringName": autorest.Encode("path", virtualNetworkPeeringName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
@@ -247,8 +245,7 @@ func (client VirtualNetworkPeeringsClient) GetPreparer(resourceGroupName string,
 		"virtualNetworkPeeringName": autorest.Encode("path", virtualNetworkPeeringName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
@@ -313,8 +310,7 @@ func (client VirtualNetworkPeeringsClient) ListPreparer(resourceGroupName string
 		"virtualNetworkName": autorest.Encode("path", virtualNetworkName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 

@@ -90,8 +90,7 @@ func (client SubnetsClient) CreateOrUpdatePreparer(resourceGroupName string, vir
 		"virtualNetworkName": autorest.Encode("path", virtualNetworkName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
@@ -174,8 +173,7 @@ func (client SubnetsClient) DeletePreparer(resourceGroupName string, virtualNetw
 		"virtualNetworkName": autorest.Encode("path", virtualNetworkName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
@@ -243,8 +241,7 @@ func (client SubnetsClient) GetPreparer(resourceGroupName string, virtualNetwork
 		"virtualNetworkName": autorest.Encode("path", virtualNetworkName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 	if len(expand) > 0 {
@@ -312,8 +309,7 @@ func (client SubnetsClient) ListPreparer(resourceGroupName string, virtualNetwor
 		"virtualNetworkName": autorest.Encode("path", virtualNetworkName),
 	}
 
-	const APIVersion = "2017-03-01"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 

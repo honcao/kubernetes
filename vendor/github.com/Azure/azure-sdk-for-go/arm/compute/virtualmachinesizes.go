@@ -81,8 +81,7 @@ func (client VirtualMachineSizesClient) ListPreparer(location string) (*http.Req
 		"subscriptionId": autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2016-04-30-preview"
-	queryParameters := map[string]interface{}{
+		queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
 
