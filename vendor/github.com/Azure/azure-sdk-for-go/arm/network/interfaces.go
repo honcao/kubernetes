@@ -19,9 +19,10 @@ package network
 // regenerated.
 
 import (
+	"net/http"
+
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/azure"
-	"net/http"
 )
 
 // InterfacesClient is the composite Swagger for Network Client
@@ -89,7 +90,6 @@ func (client InterfacesClient) CreateOrUpdatePreparer(resourceGroupName string, 
 		"subscriptionId":       autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -173,7 +173,6 @@ func (client InterfacesClient) DeletePreparer(resourceGroupName string, networkI
 		"subscriptionId":       autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -240,7 +239,6 @@ func (client InterfacesClient) GetPreparer(resourceGroupName string, networkInte
 		"subscriptionId":       autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -323,7 +321,6 @@ func (client InterfacesClient) GetEffectiveRouteTablePreparer(resourceGroupName 
 		"subscriptionId":       autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -396,9 +393,8 @@ func (client InterfacesClient) GetVirtualMachineScaleSetNetworkInterfacePreparer
 		"virtualMachineScaleSetName": autorest.Encode("path", virtualMachineScaleSetName),
 	}
 
-	const APIVersion = "2016-09-01"
 	queryParameters := map[string]interface{}{
-		"api-version": APIVersion,
+		"api-version": APIVersionScaleSet,
 	}
 	if len(expand) > 0 {
 		queryParameters["$expand"] = autorest.Encode("query", expand)
@@ -463,7 +459,6 @@ func (client InterfacesClient) ListPreparer(resourceGroupName string) (*http.Req
 		"subscriptionId":    autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -548,7 +543,6 @@ func (client InterfacesClient) ListAllPreparer() (*http.Request, error) {
 		"subscriptionId": autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -652,7 +646,6 @@ func (client InterfacesClient) ListEffectiveNetworkSecurityGroupsPreparer(resour
 		"subscriptionId":       autorest.Encode("path", client.SubscriptionID),
 	}
 
-	const APIVersion = "2017-03-01"
 	queryParameters := map[string]interface{}{
 		"api-version": APIVersion,
 	}
@@ -721,9 +714,8 @@ func (client InterfacesClient) ListVirtualMachineScaleSetNetworkInterfacesPrepar
 		"virtualMachineScaleSetName": autorest.Encode("path", virtualMachineScaleSetName),
 	}
 
-	const APIVersion = "2016-09-01"
 	queryParameters := map[string]interface{}{
-		"api-version": APIVersion,
+		"api-version": APIVersionScaleSet,
 	}
 
 	preparer := autorest.CreatePreparer(
@@ -814,9 +806,8 @@ func (client InterfacesClient) ListVirtualMachineScaleSetVMNetworkInterfacesPrep
 		"virtualMachineScaleSetName": autorest.Encode("path", virtualMachineScaleSetName),
 	}
 
-	const APIVersion = "2016-09-01"
 	queryParameters := map[string]interface{}{
-		"api-version": APIVersion,
+		"api-version": APIVersionScaleSet,
 	}
 
 	preparer := autorest.CreatePreparer(
